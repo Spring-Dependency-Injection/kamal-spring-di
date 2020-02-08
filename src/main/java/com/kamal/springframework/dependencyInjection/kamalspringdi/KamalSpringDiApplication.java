@@ -13,10 +13,9 @@ public class KamalSpringDiApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(KamalSpringDiApplication.class, args);
+		System.out.println("---- Primary Bean Injection -----");
 		SampleController sampleController = (SampleController) ctx.getBean("sampleController");
-		String greeting = sampleController.sayHello();
-		System.out.println(greeting);
-
+		System.out.println(sampleController.sayHello());
 		System.out.println("---- Property Dependency Injection -----");
 
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController)

@@ -2,11 +2,13 @@ package com.kamal.springframework.dependencyInjection.kamalspringdi.controller;
 
 import com.kamal.springframework.dependencyInjection.kamalspringdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class PropertyInjectedController {
 
+    @Qualifier("propertyInjectedGreetingService")
     @Autowired
     public GreetingService greetingService;
 
