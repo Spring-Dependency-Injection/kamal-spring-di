@@ -1,9 +1,6 @@
 package com.kamal.springframework.dependencyInjection.kamalspringdi;
 
-import com.kamal.springframework.dependencyInjection.kamalspringdi.controller.ConstructorInjectedController;
-import com.kamal.springframework.dependencyInjection.kamalspringdi.controller.PropertyInjectedController;
-import com.kamal.springframework.dependencyInjection.kamalspringdi.controller.SampleController;
-import com.kamal.springframework.dependencyInjection.kamalspringdi.controller.SetterInjectedController;
+import com.kamal.springframework.dependencyInjection.kamalspringdi.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -36,6 +33,13 @@ public class KamalSpringDiApplication {
 				ctx.getBean("constructorInjectedController");
 
 		System.out.println(constructorInjectedController.getGreeting());
+
+		System.out.println("---- Spring Profile -----");
+
+		I18nController i18nController = (I18nController)
+				ctx.getBean("i18nController");
+
+		System.out.println(i18nController.sayHello());
 
 
 	}
