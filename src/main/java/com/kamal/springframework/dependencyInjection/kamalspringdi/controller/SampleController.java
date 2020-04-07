@@ -8,7 +8,7 @@ public class SampleController {
 
     private final GreetingService greetingService;
 
-    public SampleController( GreetingService greetingService) {
+    public SampleController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
