@@ -1,0 +1,45 @@
+# this is a comment
+
+name : John
+
+names :
+  - John
+  - Paul
+  - Ringo
+
+pound_sign : "#"
+
+book :
+  - author : Paulo Coelho
+  - publisher : Penguin Publishers
+
+truth : yes
+
+another_truth : true
+
+more_truth : True
+
+lie : no
+
+another_lie : false
+
+more_lie : False
+
+more_more_lie : FALSE
+
+string_val : "This is a sample"
+
+colon_string : "courses : Java,C#,C++"
+
+include_new_line : |
+  assf sdddd sss
+  sssd ggggg
+  jjjjj
+
+skip_new_lines : >
+  ggggg gfggfg
+  dvcgd vtdada
+  vdsvcs ijgib
+
+
+

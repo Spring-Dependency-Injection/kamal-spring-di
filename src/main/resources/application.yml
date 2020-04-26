@@ -1,0 +1,7 @@
+kamal:
+   jms:
+      username: Kishore
+      password: Kishore123
+      url: myqueue@host123.com
+
+
