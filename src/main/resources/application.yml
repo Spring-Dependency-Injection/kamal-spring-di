@@ -4,4 +4,9 @@ kamal:
       password: Kishore123
       url: myqueue@host123.com
 
-
+---
+spring:
+   profiles: de
+kamal:
+  jms:
+    username: Kishore $$$ IN $$$ GERMAN
