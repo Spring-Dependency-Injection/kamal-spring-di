@@ -10,6 +10,8 @@ public class FakeDataSource {
 
     private String dbUrl;
 
+    private String sysUser;
+
     public String getUserName() {
         return userName;
     }
@@ -32,5 +34,13 @@ public class FakeDataSource {
 
     public void setDbUrl(String dbUrl) {
         this.dbUrl = dbUrl;
+    }
+
+    public String getSysUser() {
+        return sysUser;
+    }
+
+    public void setSysUser(String sysUser) {
+        this.sysUser = sysUser;
     }
 }
